@@ -1,0 +1,185 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: arial;
+  background-color: rgb(214, 197, 173);
+}
+
+.wrapper{
+  display: flex;
+}
+
+.container{
+  width: 100%;
+}
+
+.openbtn {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 2; /* Pastikan tombol di atas sidebar */
+  width: 20px;
+  font-size: 16px; /* Ukuran font tetap */
+  padding: 8px; /* Ubah padding sesuai kebutuhan */
+  background-color: transparent; /* Hapus warna latar belakang */
+  border: none; /* Hapus border */
+  flex: 1;
+}
+
+.openbtn:hover {
+    background-color: rgb(133, 113, 87);
+}
+.sidebar {
+  width: 215px;
+  background-color: rgb(176, 152, 122);
+  position: fixed;
+  left: -215px;
+  top: 0;
+  bottom: 0;
+  transition: left 0.5s;
+  z-index: 1;
+  border-right: 3px solid #ffffff;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.openbtn {
+  position: fixed;
+  left: 10px;
+  top: 0;
+  z-index: 2; /* Pastikan tombol di atas sidebar */
+  width: 20px;
+  font-size: 16px; /* Ukuran font tetap */
+  padding: 8px; /* Ubah padding sesuai kebutuhan */
+  background-color: transparent; /* Hapus warna latar belakang */
+  border: none; /* Hapus border */
+}
+
+.sidebar-title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 50px;
+  background-color: rgb(114, 94, 68);
+  border-bottom: 1px solid #ffffff;
+  padding: 10px;
+}
+
+.sidebar ul {
+  margin-top: 2px;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 25px;
+  display: block;
+  margin-left: -80px;
+  border-bottom: 1px solid #ffffff;
+}
+.sidebar ul li a:hover {
+  background-color: rgb(245, 212, 169);
+  transition: 0, 3s;
+}
+
+.selection {
+  position: relative;
+  width: auto;
+  padding: 0px 10px 10px 220px;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.sidebar ul li {
+  text-align: center;
+}
+
+.section form {
+  position: relative;
+  width: auto;
+}
+
+.form-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .form-container form {
+        width: 48%; /* Atur lebar formulir sesuai kebutuhan */
+        margin-bottom: 20px;
+    }
+
+.section tr {
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  padding: 0px 10px 10px 220px;
+}
+
+.table1 {
+  text-align: center;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #e8e8e8;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(131, 102, 66);
+  color: white;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgb(198, 156, 105);
+}
+
+th {
+  background-color: rgb(133, 113, 87);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(212, 183, 147);
+}
+
+th,
+td {
+  padding: 10px;
+}
