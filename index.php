@@ -58,7 +58,7 @@
         <h3>Category</h3>
         <div class="box">
             <?php 
-            $kategori = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY category_id DESC");
+            $kategori = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY category_id DESC 6");
             if(mysqli_num_rows($kategori) > 0){
                 while($k = mysqli_fetch_array($kategori)){
                     ?>
@@ -83,9 +83,9 @@
             <?php 
             ini_set('error_reporting',0);
             if($_GET['kat']==''){
-                $produk = mysqli_query($conn, "SELECT * FROM tb_product WHERE product_status = 1 ORDER BY product_id DESC LIMIT 8");
+                $produk = mysqli_query($conn, "SELECT * FROM tb_product WHERE product_status = 1 ORDER BY product_id DESC LIMIT 50");
             }else{
-                $produk = mysqli_query($conn, "SELECT * FROM tb_product WHERE category_id =$_GET[kat] AND product_status = 1 ORDER BY product_id DESC LIMIT 8");
+                $produk = mysqli_query($conn, "SELECT * FROM tb_product WHERE category_id =$_GET[kat] AND product_status = 1 ORDER BY product_id DESC LIMIT 50");
             }
             if(mysqli_num_rows($produk) > 0){
                 while($p = mysqli_fetch_array($produk)){
