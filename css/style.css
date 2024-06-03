@@ -2,9 +2,10 @@
   padding: 0;
   margin: 0;
   font-family: "Quicksand", sans-serif;
+  font-size: medium;
 }
 body {
-  background-color: blanchedalmond;
+  background-color: rgb(122, 231, 108);
 }
 a {
   color: inherit;
@@ -54,11 +55,13 @@ a {
   border: none;
   cursor: pointer;
   border: 2px solid rgb(96, 69, 32);
+  border-radius: 30px;
 }
 
 header {
   background-color: rgb(114, 94, 68);
   color: #fff;
+  height: 45px;
 }
 
 header h1 {
@@ -80,6 +83,7 @@ header ul li a {
   display: inline-block;
   padding: 20px 0 20px 15px;
 }
+
 
 header ul li a:hover {
   color: rgb(216, 179, 130);
@@ -119,12 +123,13 @@ header ul li a:hover {
 }
 
 .box {
-  background-color: rgb(176, 152, 122);
+  background-color: rgb(70, 212, 124);
   border: 5px solid #ccc;
   box-sizing: border-box;
   padding: 15px;
   margin: 10px 0 25px 0;
   border-radius: 30px;
+  padding-left: 22px;
 }
 
 .box::after {
@@ -162,6 +167,7 @@ header ul li a:hover {
 }
 .col-4 img {
   width: 100%;
+  border-radius: 10px;
 }
 .col-4 .nama {
   color: #ffffff;
@@ -232,7 +238,7 @@ header ul li a:hover {
 }
 
 .table{
-  text-align: center;
+  text-align: center;       
 }
 
 
@@ -242,40 +248,37 @@ header ul li a:hover {
 
 
 .ads {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 468px; /* Sesuaikan dengan tinggi iklan Anda */
-    margin-bottom: 20px;
-}
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 468px; /* Sesuaikan dengan tinggi iklan Anda */
+            margin-bottom: 20px;
+        }
 
-.slider {
-    width: 255%; /* Menggunakan 300% karena ada 3 gambar */
-    display: flex;
-    animation: slide 24s ease-in-out infinite; /* Durasi total animasi menjadi 12 detik */
-}
+        .slider {
+            width: 255%; /* Menggunakan 255% karena ada 3 gambar */
+            display: flex;
+            animation: slide 24s ease-in-out infinite; /* Durasi total animasi menjadi 24 detik */
+        }
 
-.slider img {
-    width: 33.33%; /* Masing-masing gambar akan menempati 1/3 dari lebar slider */
-    height: 100%; /* Mengisi tinggi iklan */
-    flex-shrink: 0; /* Menghindari penyusutan elemen */
-}
+        .slider img {
+            width: 832px; /* Masing-masing gambar akan menempati 1/3 dari lebar slider */
+            height: 100%; /* Mengisi tinggi iklan */
+            flex-shrink: 0; /* Menghindari penyusutan elemen */
+        }
 
-@keyframes slide {
-    0%, 16.66% {
-        transform: translateX(0); /* Gambar pertama terlihat selama 2 detik */
-    }
-    25%, 41.66% {
-        transform: translateX(-33.33%); /* Gambar kedua terlihat selama 2 detik */
-    }
-    50%, 66.66% {
-        transform: translateX(-66.66%); /* Gambar ketiga terlihat selama 2 detik */
-    }
-    75%, 100% {
-        transform: translateX(-100%); /* Kembali ke awal dengan transisi cepat */
-    }
-}
-
-
-
+        @keyframes slide {
+            0%, 16.66% {
+                transform: translateX(0); /* Gambar pertama terlihat selama 4 detik */
+            }
+            25%, 41.66% {
+                transform: translateX(-33.33%); /* Gambar kedua terlihat selama 4 detik */
+            }
+            50%, 66.66% {
+                transform: translateX(-66.66%); /* Gambar ketiga terlihat selama 4 detik */
+            }
+            75%, 100% {
+                transform: translateX(-100%); /* Kembali ke awal dengan transisi cepat */
+            }
+        }
 
